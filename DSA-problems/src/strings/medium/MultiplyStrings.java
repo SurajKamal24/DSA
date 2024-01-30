@@ -29,7 +29,7 @@ public class MultiplyStrings {
         String sentence = "the cattle was rattled by the battery";
         List<String> dictionary = new ArrayList<>(List.of("cat","bat","rat"));
         StringBuilder sb = new StringBuilder(sentence);
-        
+
 
 
     }
