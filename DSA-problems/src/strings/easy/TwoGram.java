@@ -10,7 +10,7 @@ public class TwoGram {
         String maxStr = "";
         int maxFreq = 0;
 
-        for (int i = 0; i < n -1 ; i++) {
+        /*for (int i = 0; i < n -1 ; i++) {
             int currFreq = 0;
             for (int j = i; j < n - 1; j++) {
                 if (s.charAt(i) == s.charAt(j) && s.charAt(i+1) == s.charAt(j+1)) {
@@ -24,7 +24,12 @@ public class TwoGram {
                 str.append(s.charAt(i+1));
                 maxStr = str.toString();
             }
+        }*/
+
+        for (int i = 0; i < n - 1; i++) {
+
         }
+
         System.out.println(maxStr);
     }
 }
