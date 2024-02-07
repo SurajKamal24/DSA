@@ -17,5 +17,6 @@ public class LargestNumberFormedFromAnArray {
     public static void main(String[] args) {
         String[] arr = {"3", "30", "34", "5", "9"};
         System.out.println(printLargest(arr));
+        System.out.println(Math.pow(10, 0));
     }
 }
