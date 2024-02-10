@@ -5,7 +5,7 @@ package strings.easy;
 public class MakeTheStringGreat {
 
     public static String makeGood(String s) {
-        boolean flag  = true;
+        /*boolean flag  = true;
 
         while (flag) {
             flag = false;
@@ -21,10 +21,24 @@ public class MakeTheStringGreat {
             s = sb.toString();
         }
 
-        return s;
+        return s;*/
+        StringBuilder sb = new StringBuilder(s);
+        for (int j = 0; j < sb.length(); j++) {
+            int count = 0;
+            System.out.println("Inside for " + sb);
+            for (int i = 0; i < sb.length() - 1; i++) {
+                System.out.println("i " + sb.charAt(i) + " and i + 1 " + sb.charAt(i+1));
+                if (Math.abs(sb.charAt(i) - sb.charAt(i+1)) == 32) {
+                    sb.delete(i, i+2);
+                    count++;
+                    System.out.println("new lenght " + sb.length());
+                }
+            }
+        }
+        return sb.toString();
     }
     public static void main(String[] args) {
-        String s = "abBAcC";
+        String s = "jeSsEJ";
         System.out.println(makeGood(s));
     }
 }

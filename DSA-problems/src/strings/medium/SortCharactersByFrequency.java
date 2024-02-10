@@ -28,7 +28,7 @@ public class SortCharactersByFrequency {
         return sb.toString();
     }
     public static void main(String[] args) {
-        String s = "bcdaae";
+        String s = "bcdaaeee";
         System.out.println(frequencySort(s));
     }
 }
