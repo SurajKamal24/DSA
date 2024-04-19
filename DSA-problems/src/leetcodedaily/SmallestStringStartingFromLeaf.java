@@ -46,7 +46,7 @@ public class SmallestStringStartingFromLeaf {
         dfs(root, current, smallest);
         return smallest.toString();
     }
-    
+
     public static void main(String[] args) {
         SmallestStringStartingFromLeaf s = new SmallestStringStartingFromLeaf();
         TreeNode root = s.new TreeNode(0);
