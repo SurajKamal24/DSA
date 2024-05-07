@@ -1,5 +1,8 @@
 package leetcodedaily;
 
+import java.util.Collection;
+import java.util.Collections;
+
 public class RemoveNodesFromLinkedList {
     public static class ListNode {
         int val;
@@ -49,5 +52,6 @@ public class RemoveNodesFromLinkedList {
         head.next.next.next = new ListNode(3);
         head.next.next.next.next = new ListNode(8);
         ListNode result = r.removeNodes(head);
+
     }
 }
