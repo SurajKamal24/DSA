@@ -3,6 +3,14 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Test {
+    public static int solve(int N, int K) {
+        int result = 0;
+        while (N > 0) {
+            result = result + (N >= K ? K : N);
+            N = N - K + (N >= K ? 1 : 0);
+        }
+        return result;
+    }
     public static int timeRequiredToBuy(int[] tickets, int k) {
         int totalSecs = 0;
         while (tickets[k] != 0) {
@@ -50,11 +58,12 @@ public class Test {
             max = Math.max(max, scanner.nextInt());
         }
         System.out.println(max);*/
-        for (Planet planet : Planet.values()) {
+        /*for (Planet planet : Planet.values()) {
             if (planet.mass() > 5.0e+24 && planet.radius() > 6.0e+7) {
                 System.out.println(planet);
             }
-        }
+        }*/
+        System.out.println(solve(100, 5));
 
     }
 }
