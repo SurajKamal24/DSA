@@ -20,6 +20,6 @@ public class KthDistinctStringInAnArray {
         return "";
     }
     public static void main(String[] args) {
-        System.out.println(new KthDistinctStringInAnArray().kthDistinct(new String[] {}));
+        System.out.println(new KthDistinctStringInAnArray().kthDistinct(new String[] {"a", "b", "c", "a", "b", "c"}, 2));
     }
 }
